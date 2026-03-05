@@ -30,7 +30,7 @@ def test_multiple_valid_outputs(input_str, valid_outputs):
 
 
 def test_large_input_size():
-    s = "z" * 500 + "abbaabba" + "y" * 500
+    s = ("abc" * 170) + "abbaabba" + ("def" * 170)
     assert longest_palindromic_substring(s) == "abbaabba"
 
 
